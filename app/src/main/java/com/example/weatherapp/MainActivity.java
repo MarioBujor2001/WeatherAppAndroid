@@ -20,6 +20,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 import com.google.android.material.textfield.TextInputEditText;
 
 import org.json.JSONArray;
@@ -98,16 +99,21 @@ public class MainActivity extends AppCompatActivity {
                     double temp = jsobjmain.getDouble("temp");
 
                     cityNameTV.setText(city);
-                    tempIV.setText(String.valueOf((int)temp)+" C");
+                    tempIV.setText(String.valueOf((int)temp)+"°C");
                     conditionIV.setText(conditions);
                     switch (conditions){
                         case "Clouds":
-                            iconIV.setImageResource(R.drawable.ic_cloudy);
+                            iconIV.setImageResource(R.drawable.cloud_big);
+                            loadBackground("https://wallpaperaccess.com/full/884784.jpg");
                             break;
                         case "Rain":
-                            iconIV.setImageResource(R.drawable.ic_rain);
+                            iconIV.setImageResource(R.drawable.rainy_big);
+                            loadBackground("https://i.pinimg.com/736x/66/f7/d5/66f7d5aaea8b44c6d10244dce9f36e7f.jpg");
                             break;
-                        default: iconIV.setImageResource(R.drawable.ic_sunny);
+                        default: {
+                            iconIV.setImageResource(R.drawable.sun_big);
+                            loadBackground("https://w0.peakpx.com/wallpaper/525/262/HD-wallpaper-sunny-day-bright-clouds-color-nature-new-nice-sky-sun.jpg");
+                        }
                     }
 
                 } catch (JSONException e) {
@@ -122,6 +128,10 @@ public class MainActivity extends AppCompatActivity {
         });
         RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
         requestQueue.add(stringReq);
+    }
+
+    public void loadBackground(String url){
+        Glide.with(this).load(url).into(backIV);
     }
 
     public void getForecastDetails(View view){
@@ -183,7 +193,7 @@ public class MainActivity extends AppCompatActivity {
     public String getTemp(JSONObject obj) throws JSONException {
         JSONObject main = obj.getJSONObject("main");
         double temp = main.getDouble("temp");
-        return String.valueOf((int)temp)+" C";
+        return String.valueOf((int)temp)+"°C";
     }
 
     public String getConditions(JSONObject obj) throws JSONException{

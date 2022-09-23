@@ -39,12 +39,12 @@ public class WeatherIconAdapter extends RecyclerView.Adapter<WeatherIconAdapter.
         holder.txtWeatherIconTemp.setText(items.get(position).getTemp());
         switch (items.get(position).getCondition()){
                 case "Clouds":
-                    holder.imgWeatherIcon.setImageResource(R.drawable.ic_cloudy);
+                    holder.imgWeatherIcon.setImageResource(R.drawable.cloud);
                     break;
                 case "Rain":
-                    holder.imgWeatherIcon.setImageResource(R.drawable.ic_rain);
+                    holder.imgWeatherIcon.setImageResource(R.drawable.rainy);
                     break;
-                default: holder.imgWeatherIcon.setImageResource(R.drawable.ic_sunny);
+                default: holder.imgWeatherIcon.setImageResource(R.drawable.sun);
         }
     }
 
