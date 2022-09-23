@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                     switch (conditions){
                         case "Clouds":
                             iconIV.setImageResource(R.drawable.cloud_big);
-                            loadBackground("https://wallpaperaccess.com/full/884784.jpg");
+                            loadBackground("https://img.freepik.com/premium-photo/dark-storm-clouds-before-rain-used-climate-background_64749-682.jpg?w=2000");
                             break;
                         case "Rain":
                             iconIV.setImageResource(R.drawable.rainy_big);
@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
                             break;
                         default: {
                             iconIV.setImageResource(R.drawable.sun_big);
-                            loadBackground("https://w0.peakpx.com/wallpaper/525/262/HD-wallpaper-sunny-day-bright-clouds-color-nature-new-nice-sky-sun.jpg");
+                            loadBackground("https://i.pinimg.com/originals/b1/ec/43/b1ec430ab76b54a6025055f94f6d7ec9.jpg");
                         }
                     }
 
