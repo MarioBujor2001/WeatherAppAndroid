@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                     switch (conditions){
                         case "Clouds":
                             iconIV.setImageResource(R.drawable.cloud_big);
-                            loadBackground("https://img.freepik.com/premium-photo/dark-storm-clouds-before-rain-used-climate-background_64749-682.jpg?w=2000");
+                            loadBackground("https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3VkeSUyMHNreXxlbnwwfHwwfHw%3D&w=1000&q=80");
                             break;
                         case "Rain":
                             iconIV.setImageResource(R.drawable.rainy_big);

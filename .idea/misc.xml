@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/SEM2/WeatherApp/app/src/main/res/drawable/ic_rain.xml" value="0.281" />
         <entry key="..\:/SEM2/WeatherApp/app/src/main/res/drawable/ic_sunny.xml" value="0.1425" />
         <entry key="..\:/SEM2/WeatherApp/app/src/main/res/layout/activity_main.xml" value="0.5656410256410257" />
         <entry key="..\:/SEM2/WeatherApp/app/src/main/res/layout/weather_item.xml" value="0.5" />

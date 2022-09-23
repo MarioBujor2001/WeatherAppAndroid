@@ -18,26 +18,28 @@
         android:paddingEnd="25dp">
 
         <TextView
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
             android:id="@+id/txtWeatherIconHour"
-            android:text="12:00"
-            android:textStyle="bold"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
             android:gravity="center"
-            android:layout_margin="3dp"/>
+            android:text="12:00"
+            android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/txtWeatherIconTemp"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
-            android:id="@+id/txtWeatherIconTemp"
-            android:text="32 C"
             android:layout_below="@id/txtWeatherIconHour"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            />
+            android:text="32 C"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:layout_width="wrap_content"
