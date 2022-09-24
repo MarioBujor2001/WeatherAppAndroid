@@ -15,7 +15,8 @@
         android:paddingTop="3dp"
         android:paddingBottom="3dp"
         android:paddingStart="12dp"
-        android:paddingEnd="25dp">
+        android:paddingEnd="12dp"
+        >
 
         <TextView
             android:id="@+id/txtWeatherIconHour"
