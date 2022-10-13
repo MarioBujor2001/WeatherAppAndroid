@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String url = "http://api.openweathermap.org/data/2.5/weather";
     private String urlF = "http://api.openweathermap.org/data/2.5/forecast";
-    private String appid = "207db3a0adcd44928b7bc04b9bd3f82e";
+    private String appid = "!!!api key not shown here for privacy reasons!!!";
     DecimalFormat df = new DecimalFormat("#.##");
 
     @Override
